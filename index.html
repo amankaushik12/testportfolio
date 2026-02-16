@@ -1,193 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Aman | CV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Segoe UI", sans-serif;
-        }
-
-        body {
-            background-color: #f4f6f8;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-
-        header {
-            text-align: center;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-
-        header h1 {
-            font-size: 36px;
-            color: #222;
-        }
-
-        header p {
-            font-size: 18px;
-            color: #555;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        section h2 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a73e8;
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 5px;
-        }
-
-        .content p {
-            margin-bottom: 10px;
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 6px;
-        }
-
-        .skills span {
-            display: inline-block;
-            background: #e8f0fe;
-            color: #1a73e8;
-            padding: 6px 12px;
-            margin: 5px;
-            border-radius: 20px;
-            font-size: 14px;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #777;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepanshu's CV</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 </head>
 <body>
+  <!-- Navigation -->
+  <nav>
+    <h1>Deepanshu</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<div class="container">
+  <!-- Hero Section -->
+  <section id="about" class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm Deepanshu</h2>
+      <p>A passionate developer and lifelong learner creating cool projects and experiences.</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </section>
 
-    <header>
-        <h1>Aman</h1>
-        <p>Computer Science Engineering Student | C | Python | DSA</p>
-        <p>University of Petroleum and Energy Studies (UPES)</p>
-    </header>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <h3>HTML</h3>
+        <div class="bar"><span style="width: 95%"></span></div>
+      </div>
+      <div class="skill">
+        <h3>CSS</h3>
+        <div class="bar"><span style="width: 90%"></span></div>
+      </div>
+      <div class="skill">
+        <h3>JavaScript</h3>
+        <div class="bar"><span style="width: 85%"></span></div>
+      </div>
+      <div class="skill">
+        <h3>C Programming</h3>
+        <div class="bar"><span style="width: 80%"></span></div>
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <h2>Profile</h2>
-        <div class="content">
-            <p>
-                I am a Computer Science Engineering undergraduate at UPES with a strong interest in 
-                programming and problem-solving. I am focused on building a solid foundation in 
-                Data Structures and Algorithms and applying my knowledge through consistent practice 
-                and real-world coding projects.
-            </p>
-        </div>
-    </section>
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Web Developer Intern</h3>
+        <span>Jan 2025 - Jun 2025</span>
+        <p>Worked on responsive websites, added animations, and improved UI design.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Open Source Contributor</h3>
+        <span>Jul 2025 - Present</span>
+        <p>Contributed to GitHub projects and improved code quality and documentation.</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <h2>Education</h2>
-        <div class="content">
-            <p><strong>Bachelor of Technology (B.Tech)</strong></p>
-            <p>Computer Science Engineering (CSE)</p>
-            <p>University of Petroleum and Energy Studies (UPES)</p>
-            <p>Status: Graduating</p>
-        </div>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal portfolio using HTML, CSS, JS, and GSAP animations.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Calculator App</h3>
+        <p>A JavaScript calculator with modern UI and smooth animations.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <h2>Technical Skills</h2>
-        <div class="skills">
-            <span>C Programming</span>
-            <span>Python</span>
-            <span>Data Structures</span>
-            <span>Algorithms</span>
-            <span>Problem Solving</span>
-            <span>Git & GitHub</span>
-            <span>VS Code</span>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-    <section>
-        <h2>Data Structures & Algorithms</h2>
-        <div class="content">
-            <ul>
-                <li>Arrays and Strings</li>
-                <li>Linked Lists</li>
-                <li>Stacks and Queues</li>
-                <li>Recursion</li>
-                <li>Searching and Sorting</li>
-                <li>Basic Time & Space Complexity</li>
-            </ul>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Deepanshu. All rights reserved.</p>
+  </footer>
 
-    <section>
-        <h2>Projects</h2>
-        <div class="content">
-            <p><strong>100 Days of Code (C & DSA)</strong></p>
-            <ul>
-                <li>Daily problem-solving practice</li>
-                <li>Focused on logic building and consistency</li>
-                <li>Improved understanding of core DSA concepts</li>
-            </ul>
-
-            <p><strong>Calculator in C</strong></p>
-            <ul>
-                <li>Built a console-based calculator</li>
-                <li>Used functions, conditions, and user input</li>
-                <li>Strengthened understanding of C fundamentals</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Learning & Interests</h2>
-        <div class="content">
-            <ul>
-                <li>Advanced Data Structures</li>
-                <li>Competitive Programming</li>
-                <li>Software Development</li>
-                <li>Technical Interview Preparation</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <div class="content">
-            <p><strong>GitHub:</strong> https://github.com/amankausik12</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 Aman | Built for GitHub</p>
-    </footer>
-
-</div>
-
+  <script src="script.js"></script>
 </body>
 </html>
